@@ -1,0 +1,139 @@
+[gd_scene load_steps=15 format=3 uid="uid://ded0gphjm8jrg"]
+
+[ext_resource type="PackedScene" uid="uid://bkxmvw32w2cxn" path="res://Scenes/Player.tscn" id="1_41pgc"]
+[ext_resource type="PackedScene" uid="uid://cqq2yrrsyitl4" path="res://Scenes/Levels/Level1/Platforms/PlatformVeryLarge.tscn" id="2_128u3"]
+[ext_resource type="PackedScene" uid="uid://47x0ng6sm781" path="res://Scenes/Wall.tscn" id="3_ywq74"]
+[ext_resource type="PackedScene" uid="uid://biwvklv1goqrl" path="res://Scenes/WallSmall.tscn" id="4_ntpyl"]
+[ext_resource type="PackedScene" uid="uid://bcuo217dhg1cd" path="res://Scenes/Levels/Level1/Platforms/PlatformMedium.tscn" id="5_xltpu"]
+[ext_resource type="PackedScene" uid="uid://cxpa5awl3ivt1" path="res://Scenes/Levels/Level2/Platforms/PlatformIceMedium.tscn" id="6_4d4tr"]
+[ext_resource type="PackedScene" uid="uid://cc2w7xw71b3pk" path="res://Scenes/Levels/Level3/PlatformGhostMedium.tscn" id="7_ayuf7"]
+[ext_resource type="PackedScene" uid="uid://k7perw1h104q" path="res://Scenes/Levels/Level1/Platforms/PlatformLarge.tscn" id="8_er7l8"]
+[ext_resource type="PackedScene" uid="uid://bt3d1yolvrggc" path="res://Scenes/Levels/Spikes.tscn" id="9_6e6ay"]
+[ext_resource type="PackedScene" uid="uid://dyxjm5o8hxbwg" path="res://Scenes/Levels/Level3/Level3_Sign_Tutorial.tscn" id="10_1cdn7"]
+[ext_resource type="PackedScene" uid="uid://cvuvtw1dphkkf" path="res://Scenes/Levels/Level1/Platforms/PlatformSmall.tscn" id="11_26o6x"]
+[ext_resource type="PackedScene" uid="uid://b1ctjvh0ugpqa" path="res://Scenes/Levels/Level3/PlatformGhostSmall.tscn" id="12_tqeha"]
+[ext_resource type="PackedScene" uid="uid://ypp6oirl2fe7" path="res://Scenes/Levels/Level2/Platforms/PlatformIceSmall.tscn" id="13_pyb05"]
+[ext_resource type="PackedScene" uid="uid://xr4tn2xb52qh" path="res://Scenes/Levels/Level3/Level3_Sign_End.tscn" id="14_jqwli"]
+
+[node name="Level3" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_41pgc")]
+position = Vector2(1449, 124)
+
+[node name="Map" type="Node2D" parent="."]
+
+[node name="Platform" parent="Map" instance=ExtResource("2_128u3")]
+position = Vector2(0, 584)
+
+[node name="Wall" parent="Map" instance=ExtResource("3_ywq74")]
+position = Vector2(1566, 56)
+
+[node name="Wall2" parent="Map" instance=ExtResource("3_ywq74")]
+position = Vector2(-200, 51)
+
+[node name="Wall3" parent="Map" instance=ExtResource("4_ntpyl")]
+position = Vector2(1078, 402)
+
+[node name="Wall4" parent="Map" instance=ExtResource("4_ntpyl")]
+position = Vector2(678, 401)
+
+[node name="Platform2" parent="Map" instance=ExtResource("5_xltpu")]
+position = Vector2(865, 223)
+
+[node name="Platform5" parent="Map" instance=ExtResource("5_xltpu")]
+position = Vector2(767, -95)
+
+[node name="Platform3" parent="Map" instance=ExtResource("6_4d4tr")]
+position = Vector2(332, -99)
+
+[node name="Platform4" parent="Map" instance=ExtResource("7_ayuf7")]
+position = Vector2(474, 221)
+
+[node name="Platform6" parent="Map" instance=ExtResource("8_er7l8")]
+z_index = -1
+position = Vector2(1303, 222)
+
+[node name="Platform12" parent="Map" instance=ExtResource("8_er7l8")]
+z_index = -1
+position = Vector2(1278, -201)
+
+[node name="Spikes" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(1014, 526)
+
+[node name="Spikes2" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(951, 526)
+
+[node name="Spikes3" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(886, 526)
+
+[node name="Spikes4" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(820, 526)
+
+[node name="Spikes5" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(753, 526)
+
+[node name="Spikes6" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(678, 232)
+
+[node name="Spikes7" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(601, 522)
+
+[node name="Spikes8" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(538, 522)
+
+[node name="Spikes9" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(473, 522)
+
+[node name="Spikes10" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(407, 522)
+
+[node name="Spikes11" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(340, 522)
+
+[node name="Spikes13" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(273, 523)
+
+[node name="Spikes14" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(210, 523)
+
+[node name="Spikes15" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(145, 523)
+
+[node name="Spikes16" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(79, 523)
+
+[node name="Spikes17" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(12, 523)
+
+[node name="Spikes18" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(-53, 523)
+
+[node name="Spikes12" parent="Map" instance=ExtResource("9_6e6ay")]
+position = Vector2(-120, 523)
+
+[node name="Level3_Sign_Tutorial" parent="Map" instance=ExtResource("10_1cdn7")]
+position = Vector2(1265, 169)
+
+[node name="Platform7" parent="Map" instance=ExtResource("11_26o6x")]
+position = Vector2(275, 455)
+
+[node name="Platform8" parent="Map" instance=ExtResource("11_26o6x")]
+position = Vector2(201, 390)
+
+[node name="Platform9" parent="Map" instance=ExtResource("11_26o6x")]
+position = Vector2(93, 284)
+
+[node name="Platform13" parent="Map" instance=ExtResource("11_26o6x")]
+position = Vector2(88, 11)
+
+[node name="Platform10" parent="Map" instance=ExtResource("12_tqeha")]
+position = Vector2(-28, 148)
+
+[node name="Platform14" parent="Map" instance=ExtResource("12_tqeha")]
+position = Vector2(554, -96)
+
+[node name="Platform11" parent="Map" instance=ExtResource("13_pyb05")]
+position = Vector2(211, 152)
+
+[node name="Level3_Sign_End" parent="Map" instance=ExtResource("14_jqwli")]
+position = Vector2(1386, -264)

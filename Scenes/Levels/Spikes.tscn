@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt3d1yolvrggc"]
+
+[ext_resource type="Script" path="res://Scripts/Spikes.gd" id="1_8d5kp"]
+[ext_resource type="Texture2D" uid="uid://uil2fybjoac8" path="res://Animations/Map/Spikes.png" id="1_lge0v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2cshg"]
+size = Vector2(56, 19)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ug48f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lge0v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Spikes" type="AnimatableBody2D"]
+script = ExtResource("1_8d5kp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 15.5)
+shape = SubResource("RectangleShape2D_2cshg")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ug48f")

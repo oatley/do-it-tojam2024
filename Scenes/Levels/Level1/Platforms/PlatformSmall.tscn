@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvuvtw1dphkkf"]
+
+[ext_resource type="Script" path="res://Scripts/Platform.gd" id="1_x27mn"]
+[ext_resource type="Texture2D" uid="uid://cqacbyehpsgmx" path="res://Animations/Map/grassblock.png" id="2_daexu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m1i6c"]
+
+[node name="Platform" type="AnimatableBody2D"]
+script = ExtResource("1_x27mn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_m1i6c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_daexu")
+region_enabled = true
+region_rect = Rect2(0, 0, 64, 64)

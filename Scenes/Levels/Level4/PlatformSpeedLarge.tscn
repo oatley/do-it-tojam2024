@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxud4k42h88l7"]
+
+[ext_resource type="Script" path="res://Scripts/PlatformSpeed.gd" id="1_7a528"]
+[ext_resource type="Texture2D" uid="uid://mmlpqj5kfuai" path="res://Animations/Map/speedblock.png" id="2_phdix"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m1i6c"]
+
+[node name="Platform" type="AnimatableBody2D"]
+script = ExtResource("1_7a528")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_m1i6c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(8, 0.946)
+texture = ExtResource("2_phdix")
+region_enabled = true
+region_rect = Rect2(0, 0, 64, 64)

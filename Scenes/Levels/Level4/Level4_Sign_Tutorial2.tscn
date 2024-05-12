@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://b3gm4jwj50spw"]
+
+[ext_resource type="Script" path="res://Scripts/Level4_Sign_Tutorial2.gd" id="1_j71bf"]
+[ext_resource type="Texture2D" uid="uid://dxr1my8oybo0" path="res://Animations/Map/Platform4-Sign1.png" id="2_f2f1k"]
+[ext_resource type="Texture2D" uid="uid://dgt8gkfl1lqvh" path="res://Animations/Map/Platform4-Sign2.png" id="3_afl46"]
+[ext_resource type="Texture2D" uid="uid://clowp14dcay7w" path="res://Animations/Map/Platform4-Sign3.png" id="4_sd8xg"]
+[ext_resource type="Texture2D" uid="uid://bmi74w7da1vad" path="res://Animations/Map/Platform4-Sign4.png" id="5_k1vk5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h5vqt"]
+size = Vector2(241, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cr78p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_f2f1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_afl46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sd8xg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_k1vk5")
+}],
+"loop": true,
+"name": &"Sign",
+"speed": 8.0
+}]
+
+[node name="Level4_Sign_Tutorial" type="Area2D"]
+script = ExtResource("1_j71bf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.5, 0)
+shape = SubResource("RectangleShape2D_h5vqt")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 1
+sprite_frames = SubResource("SpriteFrames_cr78p")
+animation = &"Sign"
+frame_progress = 0.258066
+
+[node name="Label" type="Label" parent="."]
+offset_left = 5.0
+offset_top = -62.0
+offset_right = 109.0
+offset_bottom = -39.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

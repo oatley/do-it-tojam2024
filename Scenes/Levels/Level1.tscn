@@ -1,0 +1,66 @@
+[gd_scene load_steps=9 format=3 uid="uid://fxa0x5owmbbd"]
+
+[ext_resource type="PackedScene" uid="uid://bkxmvw32w2cxn" path="res://Scenes/Player.tscn" id="1_72tyw"]
+[ext_resource type="PackedScene" uid="uid://sets8hpybnjq" path="res://Scenes/Levels/Level1/Sign_Level1_Tutorial.tscn" id="2_a3y58"]
+[ext_resource type="PackedScene" uid="uid://47x0ng6sm781" path="res://Scenes/Wall.tscn" id="3_8rvfg"]
+[ext_resource type="PackedScene" uid="uid://cqq2yrrsyitl4" path="res://Scenes/Levels/Level1/Platforms/PlatformVeryLarge.tscn" id="4_rqy4s"]
+[ext_resource type="PackedScene" uid="uid://k7perw1h104q" path="res://Scenes/Levels/Level1/Platforms/PlatformLarge.tscn" id="5_cmip6"]
+[ext_resource type="PackedScene" uid="uid://bcuo217dhg1cd" path="res://Scenes/Levels/Level1/Platforms/PlatformMedium.tscn" id="6_f1ah4"]
+[ext_resource type="PackedScene" uid="uid://cvuvtw1dphkkf" path="res://Scenes/Levels/Level1/Platforms/PlatformSmall.tscn" id="7_su1so"]
+[ext_resource type="PackedScene" uid="uid://dokpuxih2j4dg" path="res://Scenes/Levels/Level1/Sign_Level1_End.tscn" id="8_rqnge"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_72tyw")]
+position = Vector2(207, 96)
+
+[node name="map" type="Node2D" parent="."]
+
+[node name="Sign-Tutorial" parent="map" instance=ExtResource("2_a3y58")]
+position = Vector2(0, 230)
+
+[node name="Wall" parent="map" instance=ExtResource("3_8rvfg")]
+position = Vector2(-672, -188)
+
+[node name="Wall2" parent="map" instance=ExtResource("3_8rvfg")]
+position = Vector2(450, -177)
+
+[node name="Wall3" parent="map" instance=ExtResource("3_8rvfg")]
+position = Vector2(-672, -1081)
+
+[node name="Wall4" parent="map" instance=ExtResource("3_8rvfg")]
+position = Vector2(450, -1072)
+
+[node name="Platform" parent="map" instance=ExtResource("4_rqy4s")]
+position = Vector2(-43, 289)
+
+[node name="Platform2" parent="map" instance=ExtResource("5_cmip6")]
+position = Vector2(-383, 137)
+
+[node name="Platform3" parent="map" instance=ExtResource("6_f1ah4")]
+position = Vector2(-67, -90)
+
+[node name="Platform4" parent="map" instance=ExtResource("6_f1ah4")]
+position = Vector2(-298, 6)
+
+[node name="Platform5" parent="map" instance=ExtResource("6_f1ah4")]
+position = Vector2(140, -194)
+
+[node name="Platform6" parent="map" instance=ExtResource("7_su1so")]
+position = Vector2(-279, -288)
+
+[node name="Platform7" parent="map" instance=ExtResource("6_f1ah4")]
+position = Vector2(-426, -360)
+
+[node name="Label" type="Label" parent="map"]
+offset_left = -137.0
+offset_top = -396.0
+offset_right = -30.0
+offset_bottom = -373.0
+text = "Space to dash"
+
+[node name="Platform8" parent="map" instance=ExtResource("5_cmip6")]
+position = Vector2(163, -498)
+
+[node name="Level1_Sign_End" parent="map" instance=ExtResource("8_rqnge")]
+position = Vector2(292, -550)

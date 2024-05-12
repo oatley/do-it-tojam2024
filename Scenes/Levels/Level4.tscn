@@ -1,0 +1,559 @@
+[gd_scene load_steps=21 format=3 uid="uid://cpjptq8dgr3fr"]
+
+[ext_resource type="PackedScene" uid="uid://bkxmvw32w2cxn" path="res://Scenes/Player.tscn" id="1_qkfuq"]
+[ext_resource type="PackedScene" uid="uid://47x0ng6sm781" path="res://Scenes/Wall.tscn" id="3_b07hh"]
+[ext_resource type="PackedScene" uid="uid://k7perw1h104q" path="res://Scenes/Levels/Level1/Platforms/PlatformLarge.tscn" id="3_olvvb"]
+[ext_resource type="PackedScene" uid="uid://cgvwy4jvdrn0" path="res://Scenes/Levels/Level4/PlatformBounceLarge.tscn" id="4_vs0qe"]
+[ext_resource type="PackedScene" uid="uid://bt3d1yolvrggc" path="res://Scenes/Levels/Spikes.tscn" id="5_h7vka"]
+[ext_resource type="PackedScene" uid="uid://cy8aw2ukvwhkj" path="res://Scenes/Levels/Level4/Level4_Sign_Tutorial.tscn" id="6_hoaxp"]
+[ext_resource type="PackedScene" uid="uid://4655rlngq3pj" path="res://Scenes/Levels/Level4/PlatformBounceMedium.tscn" id="7_7x1x1"]
+[ext_resource type="PackedScene" uid="uid://b3gm4jwj50spw" path="res://Scenes/Levels/Level4/Level4_Sign_Tutorial2.tscn" id="8_2tnox"]
+[ext_resource type="PackedScene" uid="uid://dq46vj1ttr45u" path="res://Scenes/Levels/Level4/Level4_Sign_Trick.tscn" id="8_vgg1t"]
+[ext_resource type="PackedScene" uid="uid://bm7djawaqxuco" path="res://Scenes/Levels/Level4/PlatformSpeedMedium.tscn" id="9_60wsp"]
+[ext_resource type="PackedScene" uid="uid://dgqsh5vpcswx" path="res://Scenes/Levels/Level4/PlatformSpeedVeryLarge.tscn" id="9_sr1x7"]
+[ext_resource type="PackedScene" uid="uid://cvuvtw1dphkkf" path="res://Scenes/Levels/Level1/Platforms/PlatformSmall.tscn" id="10_reftw"]
+[ext_resource type="PackedScene" uid="uid://ypp6oirl2fe7" path="res://Scenes/Levels/Level2/Platforms/PlatformIceSmall.tscn" id="11_kmdai"]
+[ext_resource type="PackedScene" uid="uid://dmjvf4sssb178" path="res://Scenes/Levels/Level4/PlatformBounceSmall.tscn" id="12_2lq0m"]
+[ext_resource type="PackedScene" uid="uid://b1ctjvh0ugpqa" path="res://Scenes/Levels/Level3/PlatformGhostSmall.tscn" id="13_h6aqk"]
+[ext_resource type="PackedScene" uid="uid://crwcswchgbevu" path="res://Scenes/Levels/Level4/PlatformSpeedSmall.tscn" id="14_0dwos"]
+[ext_resource type="PackedScene" uid="uid://doh2saodjyux6" path="res://Scenes/Levels/Level2/Platforms/PlatformIceVeryLarge.tscn" id="15_uo0l0"]
+[ext_resource type="PackedScene" uid="uid://bxud4k42h88l7" path="res://Scenes/Levels/Level4/PlatformSpeedLarge.tscn" id="16_nkebk"]
+[ext_resource type="PackedScene" uid="uid://bcuo217dhg1cd" path="res://Scenes/Levels/Level1/Platforms/PlatformMedium.tscn" id="18_qrbja"]
+[ext_resource type="PackedScene" uid="uid://bqcnc217gq0pu" path="res://Scenes/Levels/Level4/Level4_Sign_End.tscn" id="20_oea0w"]
+
+[node name="Level4" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_qkfuq")]
+position = Vector2(936, -521)
+
+[node name="Map" type="Node2D" parent="."]
+
+[node name="Wall2" parent="Map" instance=ExtResource("3_b07hh")]
+position = Vector2(1522, 78)
+
+[node name="Wall4" parent="Map" instance=ExtResource("3_b07hh")]
+position = Vector2(1520, -498)
+
+[node name="Wall10" parent="Map" instance=ExtResource("3_b07hh")]
+position = Vector2(1520, -1136)
+
+[node name="Wall3" parent="Map" instance=ExtResource("3_b07hh")]
+position = Vector2(439, 78)
+
+[node name="Wall5" parent="Map" instance=ExtResource("3_b07hh")]
+position = Vector2(-4553, 103)
+
+[node name="Wall6" parent="Map" instance=ExtResource("3_b07hh")]
+position = Vector2(-6553, 581)
+
+[node name="Wall7" parent="Map" instance=ExtResource("3_b07hh")]
+position = Vector2(-8422, 102)
+
+[node name="Wall8" parent="Map" instance=ExtResource("3_b07hh")]
+position = Vector2(-8422, -850)
+
+[node name="Wall9" parent="Map" instance=ExtResource("3_b07hh")]
+position = Vector2(-6582, -1198)
+
+[node name="Platform" parent="Map" instance=ExtResource("3_olvvb")]
+position = Vector2(726, -453)
+
+[node name="Platform2" parent="Map" instance=ExtResource("4_vs0qe")]
+position = Vector2(1238, -452)
+
+[node name="Platform3" parent="Map" instance=ExtResource("4_vs0qe")]
+position = Vector2(1236, -906)
+
+[node name="Platform6" parent="Map" instance=ExtResource("4_vs0qe")]
+position = Vector2(217, -453)
+
+[node name="Spikes" parent="Map" instance=ExtResource("5_h7vka")]
+position = Vector2(1395, -849)
+rotation = 3.14159
+
+[node name="Spikes2" parent="Map" instance=ExtResource("5_h7vka")]
+position = Vector2(1459, -849)
+rotation = 3.14159
+
+[node name="Spikes3" parent="Map" instance=ExtResource("5_h7vka")]
+position = Vector2(1269, -849)
+rotation = 3.14159
+
+[node name="Spikes4" parent="Map" instance=ExtResource("5_h7vka")]
+position = Vector2(1333, -849)
+rotation = 3.14159
+
+[node name="Spikes5" parent="Map" instance=ExtResource("5_h7vka")]
+position = Vector2(1142, -849)
+rotation = 3.14159
+
+[node name="Spikes6" parent="Map" instance=ExtResource("5_h7vka")]
+position = Vector2(1206, -849)
+rotation = 3.14159
+
+[node name="Spikes7" parent="Map" instance=ExtResource("5_h7vka")]
+position = Vector2(1016, -849)
+rotation = 3.14159
+
+[node name="Spikes9" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-4619, 501)
+
+[node name="Spikes10" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-4680, 501)
+
+[node name="Spikes11" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-4743, 501)
+
+[node name="Spikes12" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-4804, 501)
+
+[node name="Spikes13" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-4866, 501)
+
+[node name="Spikes14" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-4927, 501)
+
+[node name="Spikes15" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-4991, 501)
+
+[node name="Spikes16" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5052, 501)
+
+[node name="Spikes17" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5113, 501)
+
+[node name="Spikes18" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5174, 501)
+
+[node name="Spikes19" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5237, 501)
+
+[node name="Spikes25" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5609, 501)
+
+[node name="Spikes26" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5670, 501)
+
+[node name="Spikes27" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5733, 501)
+
+[node name="Spikes28" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5794, 501)
+
+[node name="Spikes29" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5856, 501)
+
+[node name="Spikes30" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5917, 501)
+
+[node name="Spikes31" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5981, 501)
+
+[node name="Spikes32" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6042, 501)
+
+[node name="Spikes33" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6103, 501)
+
+[node name="Spikes34" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6164, 501)
+
+[node name="Spikes35" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6227, 501)
+
+[node name="Spikes36" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-4699, -404)
+
+[node name="Spikes37" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-4760, -404)
+
+[node name="Spikes38" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-4821, -404)
+
+[node name="Spikes39" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-4882, -404)
+
+[node name="Spikes40" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-4945, -404)
+
+[node name="Spikes42" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5009, -404)
+
+[node name="Spikes43" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5070, -404)
+
+[node name="Spikes44" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5133, -404)
+
+[node name="Spikes20" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5298, 501)
+
+[node name="Spikes21" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5360, 501)
+
+[node name="Spikes22" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5421, 501)
+
+[node name="Spikes23" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5485, 501)
+
+[node name="Spikes24" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5546, 501)
+
+[node name="Spikes8" parent="Map" instance=ExtResource("5_h7vka")]
+position = Vector2(1080, -849)
+rotation = 3.14159
+
+[node name="Level4_Sign_Tutorial" parent="Map" instance=ExtResource("6_hoaxp")]
+position = Vector2(1211, -516)
+
+[node name="Platform4" parent="Map" instance=ExtResource("7_7x1x1")]
+position = Vector2(720, -569)
+
+[node name="Platform5" parent="Map" instance=ExtResource("7_7x1x1")]
+position = Vector2(762, -1216)
+
+[node name="Level4_Sign_Trick" parent="Map" instance=ExtResource("8_vgg1t")]
+position = Vector2(-6680, -998)
+
+[node name="TrickPlatform" parent="Map/Level4_Sign_Trick" instance=ExtResource("18_qrbja")]
+position = Vector2(-32, 53)
+
+[node name="TrickSpikes1" parent="Map/Level4_Sign_Trick" instance=ExtResource("5_h7vka")]
+position = Vector2(31, 57)
+
+[node name="TrickSpikes2" parent="Map/Level4_Sign_Trick" instance=ExtResource("5_h7vka")]
+position = Vector2(-30, 57)
+
+[node name="TrickSpikes3" parent="Map/Level4_Sign_Trick" instance=ExtResource("5_h7vka")]
+position = Vector2(-92, 57)
+
+[node name="Level4_Sign_Tutorial2" parent="Map" instance=ExtResource("8_2tnox")]
+position = Vector2(-15, -505)
+
+[node name="Platform7" parent="Map" instance=ExtResource("9_sr1x7")]
+position = Vector2(-1639, -438)
+
+[node name="Platform20" parent="Map" instance=ExtResource("9_sr1x7")]
+position = Vector2(-2987, -439)
+
+[node name="Platform10" parent="Map" instance=ExtResource("12_2lq0m")]
+position = Vector2(-1203, -725)
+
+[node name="GhostPlatform" parent="Map" instance=ExtResource("13_h6aqk")]
+position = Vector2(-1459, -725)
+
+[node name="Platform11" parent="Map" instance=ExtResource("14_0dwos")]
+position = Vector2(-947, -725)
+
+[node name="Platform12" parent="Map" instance=ExtResource("10_reftw")]
+position = Vector2(-1715, -725)
+
+[node name="Platform13" parent="Map" instance=ExtResource("11_kmdai")]
+position = Vector2(-1971, -725)
+
+[node name="Platform14" parent="Map" instance=ExtResource("12_2lq0m")]
+position = Vector2(-2483, -725)
+
+[node name="GhostPlatform2" parent="Map" instance=ExtResource("13_h6aqk")]
+position = Vector2(-2739, -725)
+
+[node name="Platform15" parent="Map" instance=ExtResource("14_0dwos")]
+position = Vector2(-2227, -725)
+
+[node name="Platform16" parent="Map" instance=ExtResource("10_reftw")]
+position = Vector2(-2982, -727)
+
+[node name="Platform17" parent="Map" instance=ExtResource("11_kmdai")]
+position = Vector2(-3238, -727)
+
+[node name="Platform18" parent="Map" instance=ExtResource("12_2lq0m")]
+position = Vector2(-3750, -727)
+
+[node name="GhostPlatform3" parent="Map" instance=ExtResource("13_h6aqk")]
+position = Vector2(-4006, -727)
+
+[node name="Platform19" parent="Map" instance=ExtResource("14_0dwos")]
+position = Vector2(-3494, -727)
+
+[node name="Platform21" parent="Map" instance=ExtResource("10_reftw")]
+position = Vector2(-4262, -727)
+
+[node name="Platform22" parent="Map" instance=ExtResource("11_kmdai")]
+position = Vector2(-4518, -727)
+
+[node name="Platform23" parent="Map" instance=ExtResource("12_2lq0m")]
+position = Vector2(-5030, -727)
+
+[node name="GhostPlatform4" parent="Map" instance=ExtResource("13_h6aqk")]
+position = Vector2(-5286, -727)
+
+[node name="Platform24" parent="Map" instance=ExtResource("14_0dwos")]
+position = Vector2(-4774, -727)
+
+[node name="Platform25" parent="Map" instance=ExtResource("10_reftw")]
+position = Vector2(-5529, -729)
+
+[node name="Platform26" parent="Map" instance=ExtResource("11_kmdai")]
+position = Vector2(-5785, -729)
+
+[node name="Platform27" parent="Map" instance=ExtResource("12_2lq0m")]
+position = Vector2(-6297, -729)
+
+[node name="GhostPlatform6" parent="Map" instance=ExtResource("13_h6aqk")]
+position = Vector2(-7085, -631)
+
+[node name="Platform28" parent="Map" instance=ExtResource("14_0dwos")]
+position = Vector2(-6041, -729)
+
+[node name="Platform8" parent="Map" instance=ExtResource("15_uo0l0")]
+position = Vector2(-6187, 557)
+
+[node name="Platform35" parent="Map" instance=ExtResource("15_uo0l0")]
+position = Vector2(-6791, 557)
+
+[node name="Platform9" parent="Map" instance=ExtResource("7_7x1x1")]
+position = Vector2(-7891, 427)
+
+[node name="Platform34" parent="Map" instance=ExtResource("7_7x1x1")]
+position = Vector2(-8157, 207)
+
+[node name="Platform36" parent="Map" instance=ExtResource("7_7x1x1")]
+position = Vector2(-7883, -40)
+
+[node name="Platform38" parent="Map" instance=ExtResource("7_7x1x1")]
+position = Vector2(-8147, -284)
+
+[node name="Platform39" parent="Map" instance=ExtResource("7_7x1x1")]
+position = Vector2(-7266, -562)
+
+[node name="Platform43" parent="Map" instance=ExtResource("7_7x1x1")]
+position = Vector2(-6909, -734)
+
+[node name="Platform29" parent="Map" instance=ExtResource("16_nkebk")]
+position = Vector2(-4922, -356)
+
+[node name="Spikes41" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5239, -268)
+
+[node name="Spikes45" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5300, -268)
+
+[node name="Spikes46" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5361, -268)
+
+[node name="Spikes47" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5422, -268)
+
+[node name="Spikes48" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5485, -268)
+
+[node name="Spikes49" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5549, -268)
+
+[node name="Spikes50" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5610, -268)
+
+[node name="Spikes51" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5673, -268)
+
+[node name="Platform30" parent="Map" instance=ExtResource("16_nkebk")]
+position = Vector2(-5462, -220)
+
+[node name="Spikes52" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5679, -136)
+
+[node name="Spikes53" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5740, -136)
+
+[node name="Spikes54" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5801, -136)
+
+[node name="Spikes55" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5862, -136)
+
+[node name="Spikes56" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5925, -136)
+
+[node name="Spikes57" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-5989, -136)
+
+[node name="Spikes58" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6050, -136)
+
+[node name="Spikes59" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6113, -136)
+
+[node name="Platform31" parent="Map" instance=ExtResource("16_nkebk")]
+position = Vector2(-5902, -88)
+
+[node name="Platform33" parent="Map" instance=ExtResource("16_nkebk")]
+position = Vector2(-6555, -440)
+rotation = 1.5708
+
+[node name="Spikes68" parent="Map/Platform33" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(223, -48)
+
+[node name="Spikes69" parent="Map/Platform33" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(162, -48)
+
+[node name="Spikes70" parent="Map/Platform33" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(101, -48)
+
+[node name="Spikes71" parent="Map/Platform33" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(40, -48)
+
+[node name="Spikes72" parent="Map/Platform33" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-23, -48)
+
+[node name="Spikes73" parent="Map/Platform33" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-87, -48)
+
+[node name="Spikes74" parent="Map/Platform33" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-148, -48)
+
+[node name="Spikes75" parent="Map/Platform33" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-211, -48)
+
+[node name="Platform40" parent="Map" instance=ExtResource("16_nkebk")]
+position = Vector2(-6615, -440)
+rotation = 4.71239
+
+[node name="Spikes68" parent="Map/Platform40" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(223, -48)
+
+[node name="Spikes69" parent="Map/Platform40" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(162, -48)
+
+[node name="Spikes70" parent="Map/Platform40" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(101, -48)
+
+[node name="Spikes71" parent="Map/Platform40" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(40, -48)
+
+[node name="Spikes72" parent="Map/Platform40" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-23, -48)
+
+[node name="Spikes73" parent="Map/Platform40" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-87, -48)
+
+[node name="Spikes74" parent="Map/Platform40" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-148, -48)
+
+[node name="Spikes75" parent="Map/Platform40" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-211, -48)
+
+[node name="Spikes60" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6110, 2)
+
+[node name="Spikes61" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6171, 2)
+
+[node name="Spikes62" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6232, 2)
+
+[node name="Spikes63" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6293, 2)
+
+[node name="Spikes64" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6356, 2)
+
+[node name="Spikes65" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6420, 2)
+
+[node name="Spikes66" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6481, 2)
+
+[node name="Spikes67" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-6544, 2)
+
+[node name="Spikes68" parent="Map" instance=ExtResource("5_h7vka")]
+z_index = 1
+position = Vector2(-7085, -625)
+
+[node name="Platform32" parent="Map" instance=ExtResource("16_nkebk")]
+position = Vector2(-6333, 50)
+
+[node name="Platform37" parent="Map" instance=ExtResource("9_60wsp")]
+position = Vector2(-7873, -555)
+
+[node name="Platform41" parent="Map" instance=ExtResource("18_qrbja")]
+position = Vector2(-7103, -942)
+
+[node name="Level4_Sign_End" parent="." instance=ExtResource("20_oea0w")]
+position = Vector2(-7143, -997)

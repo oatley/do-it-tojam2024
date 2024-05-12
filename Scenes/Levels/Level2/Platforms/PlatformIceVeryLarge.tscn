@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://doh2saodjyux6"]
+
+[ext_resource type="Script" path="res://Scripts/PlatformIce.gd" id="1_tsjx0"]
+[ext_resource type="Texture2D" uid="uid://rt1mu5c1me05" path="res://Animations/Map/iceblock.png" id="2_hl67i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m1i6c"]
+
+[node name="Platform" type="AnimatableBody2D"]
+script = ExtResource("1_tsjx0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_m1i6c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(50, 1.378)
+texture = ExtResource("2_hl67i")
+region_enabled = true
+region_rect = Rect2(0, 0, 64, 64)

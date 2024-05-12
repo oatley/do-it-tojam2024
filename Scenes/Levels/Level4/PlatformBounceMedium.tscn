@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://4655rlngq3pj"]
+
+[ext_resource type="Script" path="res://Scripts/PlatformBounce.gd" id="1_nqeq5"]
+[ext_resource type="Texture2D" uid="uid://bsa7o64268b8" path="res://Animations/Map/bounceblock.png" id="2_58d6w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m1i6c"]
+
+[node name="Platform" type="AnimatableBody2D"]
+script = ExtResource("1_nqeq5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_m1i6c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 0.932)
+texture = ExtResource("2_58d6w")
+region_enabled = true
+region_rect = Rect2(0, 0, 64, 64)

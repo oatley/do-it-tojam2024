@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dw0h2xyac6vmg"]
+
+[ext_resource type="Texture2D" uid="uid://cwmx3b61ffkt" path="res://Animations/Map/Background.png" id="1_gcl5h"]
+
+[node name="Sprite2D" type="Sprite2D"]
+z_index = -3
+scale = Vector2(10000, 10000)
+texture = ExtResource("1_gcl5h")

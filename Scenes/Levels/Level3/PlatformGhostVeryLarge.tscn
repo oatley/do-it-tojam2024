@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://ru5jbavgckdf"]
+
+[ext_resource type="Script" path="res://Scripts/PlatformGhost.gd" id="1_rs3cb"]
+[ext_resource type="Texture2D" uid="uid://b68e8106kqfr6" path="res://Animations/Map/ghostblock.png" id="2_w7we3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m1i6c"]
+
+[node name="GhostPlatform" type="Area2D"]
+script = ExtResource("1_rs3cb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_m1i6c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(50, 1.378)
+texture = ExtResource("2_w7we3")
+region_enabled = true
+region_rect = Rect2(0, 0, 64, 64)
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = 88.0
+offset_top = -56.0
+offset_right = 200.0
+offset_bottom = -33.0
+text = "Hehe"
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+offset_left = -133.0
+offset_top = 28.0
+offset_right = -21.0
+offset_bottom = 51.0
+text = "Haha
+"
